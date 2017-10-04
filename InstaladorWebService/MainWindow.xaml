@@ -1,0 +1,24 @@
+﻿<Window x:Class="InstaladorWebService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Working Brain Setup" Height="479" Width="874.35" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow" Icon="/Images/wb_icone.ico" Closed="Window_Closed_1" >
+    <Window.Background>
+        <ImageBrush ImageSource="Images/Full.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="209*"/>
+            <ColumnDefinition Width="607*"/>
+            <ColumnDefinition Width="52*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="353*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="0" x:Name="bordaFrame"  BorderBrush="Yellow" CornerRadius="10" Padding="2" Grid.Column="1" Grid.Row="1">
+            <Frame x:Name = "frame"  Content="" Grid.Column="5" Grid.Row="3" Grid.RowSpan="7" Margin="0,0,0,8" NavigationUIVisibility="Hidden"  Navigating="frame_Navigating" HorizontalAlignment="Right" Width="14.273"/>
+        </Border>
+
+    </Grid>
+</Window>
